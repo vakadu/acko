@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:300,400,600,700' rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Acko</title>
+    <meta name="keywords" content="acko">
+    <meta name="description" content="acko">
+
+    <!-- build:css /assets/styles/styles.css -->
+    <link rel="stylesheet" href="temp/styles/styles.css">
+    <!-- endbuild -->
+
+</head>
+<body>
+
+<header class="site-header">
+    <div class="wrapper">
+        <div class="site-header__logo">
+            <div class="site-header__logo__graphic">Acko</div>
+        </div>
+        <div class="site-header__menu-icon">
+            <div class="site-header__menu-icon__middle"></div>
+        </div>
+        <div class="site-header__menu-content">
+            <nav class="primary-nav primary-nav--pull-left">
+                <ul>
+                    <li><a href="#schedule" id="our-beginning-link">Schedule</a></li>
+                    <li><a href="#overview" id="features-link">Overview</a></li>
+                    <li><a href="#articles" id="testimonials-link">Articles</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="large-hero">
+    <div class="large-hero__image-wrap">
+        <picture>
+            <source srcset="assets/images/hero--larger.jpg 1920w" media="(min-width: 1380px)">
+            <source srcset="assets/images/hero--medium.jpg 1380w" media="(min-width: 990px)">
+            <source srcset="assets/images/hero--small.jpg 990w" media="(min-width: 640px)">
+            <img srcset="assets/images/hero--small.jpg 640w" alt="Acko" class="large-hero__image">
+        </picture>
+    </div>
+
+    <div class="large-hero__search-content">
+        <div class="wrapper">
+            <h1 class="large-hero__title">Let us find your perfect <span class="large-hero__title-subtitle">fitness</span> classes!</h1>
+            <div class="row large-hero__search-wrapper">
+                <div class="row__col-8 row__col-lg-8 row__col-md-8 row__col-sm-8">
+                    <input class="input__search" type="text" name="search" placeholder="Enter your location">
+                </div>
+                <div class="row__col-4 row__col-sm-4 row__col-md-4 row__col-sm-4">
+                    <button class="btn btn--purple btn--large btn--search">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

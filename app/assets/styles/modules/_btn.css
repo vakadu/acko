@@ -1,0 +1,30 @@
+.btn{
+    background-color: $white;
+    color: $black;
+    height: 40px;
+    text-decoration: none;
+    padding: .75rem 1.2rem;
+    display: inline-block;
+    line-height: 15px;
+
+    &--purple{
+         background-color: $purple;
+         color: $white;
+    }
+
+    &--search{
+        width: 100%;
+        border-radius: 0 4px 4px 0;
+
+        @mixin atSmall{
+            width: 85%;
+            border-radius: 4px;
+        }
+    }
+
+    &--purple:hover{
+         background-color: $white;
+         color: $black;
+         border: 1px solid #8b86f4;
+    }
+}

@@ -1,0 +1,26 @@
+input{
+    display: block;
+    font-size: 14px;
+    height: 40px;
+    line-height: 24px;
+    width: 100%;
+    color: $grey;
+    padding: 8px 10px 10px 10px;
+    margin: 0;
+    outline: 0;
+    border: 1px solid #F5F5F6;
+    background: #F5F5F6;
+
+    &:focus{
+         background-color: $white;
+         border-color: $purple;
+    }
+}
+
+.input__search{
+    border-radius: 4px 0 0 4px;
+
+    @mixin atSmall{
+        border-radius: 4px;
+    }
+}
