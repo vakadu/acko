@@ -660,3 +660,59 @@ input:focus{
          color: #212121;
          border: 1px solid #8b86f4;
     }
+.page-content{
+    position: relative;
+    width: 100%;
+}
+@media (min-width: 800px) {
+.page-content{
+        width: 800px;
+        margin: 0 auto
+}
+    }
+.page-content--pull-up{
+        position: relative;
+        top: -26px;
+    }
+.tabs{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-radius: 4px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 10px 0px, rgba(0, 0, 0, 0.12) 0px 2px 4px 0px;
+            box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 10px 0px, rgba(0, 0, 0, 0.12) 0px 2px 4px 0px;
+    background-color: #fff;
+}
+.tabs--no-padding-left{
+        padding-left: 0;
+    }
+.tabs a{
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+.tabs a i{
+            font-size: 20px;
+        }
+.tabs a.active{
+        -webkit-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+        border-bottom: 2px solid #8b86f4;
+    }
+.tabs a.active i{
+        -webkit-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+        -webkit-transform: scale(1.4);
+                transform: scale(1.4);
+    }
+.tab-content{
+    display: none;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.tab-content.active{
+        display: block;
+        padding: 18px;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+    }
