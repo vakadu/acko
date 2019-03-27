@@ -1,0 +1,1 @@
+ - Clone this repository and open index.html in dist folder to see preview of the project.
