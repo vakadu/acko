@@ -1,10 +1,13 @@
 .tabs{
-    margin: 0;
+    margin: 0 0 10px;
     padding: 0;
     list-style: none;
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 10px 0px, rgba(0, 0, 0, 0.12) 0px 2px 4px 0px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0 2px 10px 0, rgba(0, 0, 0, 0.12) 0 2px 4px 0;
     background-color: $white;
+
+    @mixin atSmall{
+        margin: 0 10px 10px;
+    }
 
     &--no-padding-left{
         padding-left: 0;
@@ -12,11 +15,13 @@
 
     a{
         display: block;
-        padding: 20px;
+        padding: 10px;
+        cursor: pointer;
+        border: 1px solid $white;
         text-align: center;
 
-        i{
-            font-size: 20px;
+        img{
+            width: 30px;
         }
     }
 
@@ -29,15 +34,8 @@
         transition: all .3s ease-out;
         transform: scale(1.4);
     }
-}
 
-.tab-content{
-    display: none;
-    transition: all 0.3s ease-out;
-
-    &.active{
-        display: block;
-        padding: 18px;
-        transition: all 0.3s ease-out;
+    &__under-text{
+        font-size: 0.8rem;
     }
 }
